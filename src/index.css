@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Open+Sans:wght@500&family=Roboto:wght@500&display=swap');
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding:0;
+}
+
+.bg-img{
+  background-image: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+.bg-btn {
+
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: #9f01ea;
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.bg-btn:hover {
+  background-position: right top;
+}
+.heading-1{
+  position: relative;
+}
+::placeholder{
+  color: #7e7a7a3f;
+}
+.bg-back{
+  background-color: #ff0000 !important;
+  color: #fff !important;
+}
+.bg-back:disabled{
+  background-color: #ff0000a8 !important;
+}
