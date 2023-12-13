@@ -10,16 +10,16 @@ export default function skillsdetails() {
       ]
     return (
      <>
-        <div className="flex justify-center  w-full mt-5">
-                <div className="w-3/4 bg-white rounded shadow-2xl rounded p-8 m-4">
-                    <h1 className="block text-left w-full text-gray-800 text-2xl font-bold mb-6">Details</h1>
+       <div className="flex   w-full p-2 ">
+                <div className=" w-full">
+                    <h1 className="block text-left w-full text-gray-800 text-2xl font-bold mb-6">Skills Details</h1>
                     <form action="/" method="post">
                       <div className="mb-4">
                             <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="firstName">
                             Select Skills
                             </label>
                             <Select
-                                  className="basic-single text-left text-sm"
+                                  className="basic-single text-left text-sm text-gray-700 border border-gray-200"
                                   isMulti
                                   classNamePrefix="select"
                             options={skills} />

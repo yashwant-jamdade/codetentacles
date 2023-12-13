@@ -1,7 +1,6 @@
 import React from "react";
 import Table from "../../component/VTable";
-import Header from "../../component/Header";
-import Sidebar from "../../component/sidebar";
+import Layout from "../../component/Layout";
 import { Link } from "react-router-dom";
 export default function Product() {
     const columns = [
@@ -71,18 +70,21 @@ export default function Product() {
 
     return (
         <>
-            <section>
-                <Header />
-                <Sidebar />
-                <div className="p-4 sm:ml-64">
-                    <div className="p-4 rounded-lg dark:border-gray-700 mt-14">
+             <Layout>
+                <div className="bg-white p-4 mb-2 rounded-lg  dark:border-gray-700 mt-14">
+                    <div>
+                        <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white text-left dark:hover:text-white text-[1.125rem] font-semibold">Product</h3>
+                    </div>
+                </div>
+                <div className="bg-white">
+                    <div className="p-4 rounded-lg dark:border-gray-700 ">
                     <div className="flex justify-end mb-3 p-2">
                         <Link to="/Add-product" className="rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Add Product</Link>
                     </div>
                         <Table cols={columns} data={data} />
                     </div>
                 </div>
-            </section>
+            </Layout>
         </>
     )
 }

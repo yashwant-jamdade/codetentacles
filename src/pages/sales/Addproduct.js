@@ -1,20 +1,22 @@
 import React from "react";
-import Header from "../../component/Header";
-import Sidebar from "../../component/sidebar";
+import Layout from "../../component/Layout";
 import { Link } from "react-router-dom";
 export default function Addproduct() {
 
 
     return (
         <>
-            <section>
-                <Header />
-                <Sidebar />
-                <div className="p-4 sm:ml-64">
-                    <div className="p-4 rounded-lg dark:border-gray-700 mt-14">
-                        <div className="flex justify-center  w-full mt-5">
-                            <div className="w-full bg-white rounded shadow-2xl rounded p-8 m-4">
-                                <h1 className="block text-left w-full text-gray-800 text-2xl font-bold mb-6">Add Product</h1>
+             <Layout>
+                <div className="bg-white p-4 mb-2 rounded-lg  dark:border-gray-700 mt-14">
+                    <div>
+                        <h3 class="!text-defaulttextcolor dark:!text-defaulttextcolor/70 dark:text-white text-left dark:hover:text-white text-[1.125rem] font-semibold">Add Product</h3>
+                    </div>
+                </div>
+                <div className="bg-white">
+                    <div className="p-4 rounded-lg dark:border-gray-700 ">
+                        <div className="">
+                            <div className="w-full ">
+                            
                                 <form action="/" method="post">
                                     <div className="mb-4">
                                         <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="firstName">
@@ -78,7 +80,7 @@ export default function Addproduct() {
 
                     </div>
                 </div>
-            </section>
+       </Layout>
         </>
     )
 }
