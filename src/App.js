@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
 import List from "./pages/List";
 import Stepperform from "./pages/Stepperform";
 import Product from "./pages/sales/Listproduct";
@@ -14,7 +13,6 @@ function App() {
       <Router>
         <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/List" element={<List />} />
         <Route path="/Stepperform" element={<Stepperform />} />
         <Route path="/Product" element={<Product />} />
