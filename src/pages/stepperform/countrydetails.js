@@ -18,24 +18,25 @@ export default function countrydetails() {
                     <h1 className="block text-left w-full text-gray-800 text-2xl font-bold mb-6">Details</h1>
                     <form action="/" method="post">
                     <div className=" grid gap-2 md:grid-cols-2">
-                        <div className="mb-4">
-                            <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="firstName">
-                                Select State
-                            </label>
-                            <Select
-                                  className="basic-single text-left text-sm text-gray-700 border border-gray-200"
-                                  classNamePrefix="select"
-                            options={state} />
-                        </div>
-                        <div className="mb-4">
+                    <div className="mb-4">
                             <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="firstName">
                                 Select Country
                             </label>
                         <Select
-                        className="basic-single text-left text-sm text-gray-700 border border-gray-200"
+                        className="basic-single text-left text-sm text-gray-700  rounded border border-gray-200"
                         classNamePrefix="select"
                         options={country} />
                         </div>
+                        <div className="mb-4">
+                            <label className="block mb-2 text-sm font-medium  text-gray-700 text-left" for="firstName">
+                                Select State
+                            </label>
+                            <Select
+                                  className="basic-single text-left text-sm rounded text-gray-700 border border-gray-200"
+                                  classNamePrefix="select"
+                            options={state} />
+                        </div>
+                        
                        </div>
                     </form>
                 </div>
