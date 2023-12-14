@@ -34,18 +34,7 @@ export default function List() {
             key: "gender",
 
         },
-        {
-            title: "State",
-            dataIndex: "state",
-            key: "state",
-
-        },
-        {
-            title: "State",
-            dataIndex: "state",
-            key: "state",
-
-        },
+   
         {
             title: "Action",
             render: (item) => (
@@ -69,8 +58,8 @@ export default function List() {
             email: "abc@gmail.com",
             phoneno: "9898767656",
             gender: "Female",
-            state: "Maharashtra",
-            country: "India",
+          
+          
         },
         {
             srno: 2,
@@ -78,8 +67,8 @@ export default function List() {
             email: "abc@gmail.com",
             phoneno: "9898767656",
             gender: "Female",
-            state: "Maharashtra",
-            country: "India",
+       
+           
         },
     ]
     return (

@@ -7,7 +7,7 @@ export default function personaldetails() {
                     <h1 className="block text-left w-full text-gray-500 text-2xl font-bold mb-6">Personal Details</h1>
                     <form action="/" method="post">
                     <div className="mb-4">
-                                <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="email">
+                                <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="profile">
                                     Profile Image
                                 </label>
                              <div className="mt-1 flex flex-col items-start">
@@ -57,6 +57,21 @@ export default function personaldetails() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                              
+                        <div className=" grid gap-x-7 md:grid-cols-2">
+                        <div className="mb-4">
+                            <label className="block mb-2 text-sm font-medium text-gray-700 text-left" for="firstName">
+                                Phone Numbers
+                            </label>
+                            <input
+                                className="w-full px-3 py-3 text-sm leading-tight text-gray-700 border border-gray-200 rounded appearance-none focus:outline-none focus:shadow-outline"
+                                id="number"
+                                type="number"
+                                placeholder="Phone Number"
+                            />
+                        </div>
+                         
                         </div>
                     </form>
                 </div>
